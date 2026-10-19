@@ -1,0 +1,11 @@
+1. Why do we use Hash::make() when saving a new password?
+
+We use Hash::make() to encrypt the password before saving it in the database, so the original password is not stored as plain text.
+
+2. How does auth middleware protect the dashboard?
+
+   Auth middleware checks if the user is logged in. If the user is not logged in, it redirects them to the login page.
+
+3. What does @csrf add to a form?
+
+@csrf adds a security token to the form to protect the website from fake or unauthorized form submissions.
